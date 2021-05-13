@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Js Calc</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="calc">
+                <div class="form-group">
+                    <input type="text" name="field" id="field" placeholder="Type a number">
+                </div>
+                <hr>
+                <ul class="numbers">
+                    <li>
+                        <button value="1" OnClick="field.value+='1'">1</button>
+                        <button value="2" OnClick="field.value+='2'">2</button>
+                        <button value="3" OnClick="field.value+='3'">3</button>
+                        <button class="plus"  value="+" OnClick="field.value+='+'">+</button>
+                    </li>
+                    <li>
+                        <button  value="4" OnClick="field.value+='4'">4</button>
+                        <button  value="5" OnClick="field.value+='5'">5</button>
+                        <button  value="6" OnClick="field.value+='6'">6</button>
+                        <button  class="multi"  value="x" OnClick="field.value+='*'">x</button>
+                    </li>
+                    <li>
+                        <button  value="7" OnClick="field.value+='7'">7</button>
+                        <button  value="8" OnClick="field.value+='8'">8</button>
+                        <button  value="9" OnClick="field.value+='9'">9</button>
+                        <button class="miner"  value="-" OnClick="field.value+='-'">-</button>
+                    </li>
+                    <li>
+                        <button  value="0" OnClick="field.value+='0'">0</button>
+                        <button class="reset"  value="c" OnClick="field.value=''">C</button>
+                        <button  value="=" OnClick="field.value=Math.round(eval(field.value))">=</button>
+                        <button class="divi"  value="÷" OnClick="field.value+='/'">÷</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
